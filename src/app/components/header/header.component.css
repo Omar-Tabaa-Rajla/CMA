@@ -1,0 +1,32 @@
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  background-color: #ccc;
+}
+.header-logo {
+  flex: 3;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  background-color: #ddd;
+}
+span {
+  cursor: pointer;
+}
+.header-middle {
+  flex: 6;
+  display: flex;
+  justify-content: center;
+}
+.header-sign-up {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  background-color: #ddd;
+}
+.sign-up-btn {
+  cursor: pointer;
+  padding: 0.2rem;
+}
