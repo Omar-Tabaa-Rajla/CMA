@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { ConsultantManagementComponent } from './components/consultant-management/consultant-management.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ConsultantComponent } from './components/consultant/consultant.component';
+import { ConsultantFormComponent } from './components/consultant-form/consultant-form.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ConsultantComponent } from './components/consultant/consultant.componen
     FooterComponent,
     ConsultantManagementComponent,
     ConsultantComponent,
+    ConsultantFormComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, FontAwesomeModule],
   providers: [],

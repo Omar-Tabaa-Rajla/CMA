@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 export class NavigationService {
   //isGoToClicked: boolean = false;
   isConsultantMgtClicked: boolean = false;
+  isConsultantFormClicked: boolean = false;
   constructor(private router: Router) {}
 
   goToDashboard(): void {
@@ -22,11 +23,24 @@ export class NavigationService {
   goToConsultMngt(): boolean {
     if (this.isConsultantMgtClicked) {
       return (this.isConsultantMgtClicked = false);
+    } else if (
+      this.isConsultantMgtClicked === false &&
+      this.isConsultantFormClicked === true
+    ) {
+      return (this.isConsultantFormClicked = false);
     } else {
       return (this.isConsultantMgtClicked = true);
     }
   }
-  onShowConsultMngt(): boolean {
+  showConsultMngt(): boolean {
     return this.isConsultantMgtClicked;
+  }
+
+  addBerater(): any {
+    this.isConsultantMgtClicked = false;
+    this.isConsultantFormClicked = true;
+    if (this.isConsultantMgtClicked) {
+      return (this.isConsultantFormClicked = false);
+    }
   }
 }

@@ -2,7 +2,11 @@
   <div class="consultant-mgmnt-wrapper">
     <div class="add-consultant">
       <div class="add-consultant-icon">
-        <fa-icon [icon]="faUserPlus" class="consultant-icon"></fa-icon>
+        <fa-icon
+          [icon]="faUserPlus"
+          class="consultant-icon"
+          (click)="onAddBerater()"
+        ></fa-icon>
         <label>Berater hinzufügen</label>
       </div>
     </div>

@@ -9,12 +9,14 @@ import { NavigationService } from 'src/app/services/navigation.service';
 export class ConsultantManagementComponent implements OnInit {
   faUserPlus = faUserPlus;
 
-  showConsulters: boolean = false;
-
   constructor(private navService: NavigationService) {}
 
   ngOnInit(): void {
     //this.isConsultantMgtClicked = this.navService.onShowConsultMngt();
     //console.log(this.isConsultantMgtClicked);
+  }
+
+  onAddBerater() {
+    this.navService.addBerater();
   }
 }

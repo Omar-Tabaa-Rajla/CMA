@@ -13,12 +13,16 @@ import { NavigationService } from 'src/app/services/navigation.service';
 })
 export class DashboardComponent implements OnInit, AfterContentChecked {
   isConsultantMgtClicked!: boolean;
+  isConsultantFormClicked!: boolean;
 
   constructor(private navService: NavigationService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.isConsultantFormClicked = this.navService.isConsultantFormClicked;
+  }
 
   ngAfterContentChecked(): void {
-    this.isConsultantMgtClicked = this.navService.onShowConsultMngt();
+    this.isConsultantMgtClicked = this.navService.showConsultMngt();
+    this.isConsultantFormClicked = this.navService.isConsultantFormClicked;
   }
 }
