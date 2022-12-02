@@ -1,0 +1,20 @@
+.consultant-mgmnt-container {
+  margin: 5rem;
+}
+.consultant-mgmnt-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+.add-consultant {
+}
+.consultant-icon {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.consultants-box {
+  background-color: #ccc;
+  width: 70%;
+  padding: 1rem;
+  border-radius: 1rem;
+}

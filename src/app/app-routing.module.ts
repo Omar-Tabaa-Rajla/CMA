@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ConsultantManagementComponent } from './components/consultant-management/consultant-management.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
 

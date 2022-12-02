@@ -9,6 +9,9 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { ConsultantManagementComponent } from './components/consultant-management/consultant-management.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ConsultantComponent } from './components/consultant/consultant.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +21,10 @@ import { FormsModule } from '@angular/forms';
     SideBarComponent,
     HeaderComponent,
     FooterComponent,
+    ConsultantManagementComponent,
+    ConsultantComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })

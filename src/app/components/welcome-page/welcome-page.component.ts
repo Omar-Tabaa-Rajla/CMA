@@ -10,7 +10,7 @@ export class WelcomePageComponent implements OnInit {
   constructor(private navService: NavigationService) {}
 
   ngOnInit(): void {}
-  onGo() {
+  onGo(): void {
     this.navService.goToDashboard();
   }
 }

@@ -1,0 +1,35 @@
+.consultant-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5rem;
+  padding: 1rem;
+  justify-content: space-between;
+  justify-items: space-between;
+  margin-bottom: 1rem;
+}
+.consultant {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+/* .consultant-img,
+.consultant-basic-info,
+.consultant-skills {
+  flex: 4;
+} */
+.consultant-img {
+  padding-left: 1rem;
+}
+.consultant-photo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+ul {
+  padding: 1rem;
+}
+li {
+  padding: 0.3rem;
+}

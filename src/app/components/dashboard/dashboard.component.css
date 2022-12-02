@@ -1,0 +1,26 @@
+.dashboard-container {
+  height: 100vh;
+}
+.dashboard-wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  justify-items: center;
+}
+.dashboard-sideBar {
+  flex: 2;
+  background-color: red;
+  padding: 1rem;
+}
+
+.sideBar-hr {
+  background-color: black;
+  width: 0.2rem;
+  border: none;
+}
+
+.dashboard-body {
+  flex: 10;
+  background-color: blue;
+  padding: 1rem;
+}
