@@ -8,7 +8,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ConsultantManagementComponent } from './components/consultant-management/consultant-management.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ConsultantComponent } from './components/consultant/consultant.component';
@@ -26,7 +26,13 @@ import { ConsultantFormComponent } from './components/consultant-form/consultant
     ConsultantComponent,
     ConsultantFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, FontAwesomeModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    FontAwesomeModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
